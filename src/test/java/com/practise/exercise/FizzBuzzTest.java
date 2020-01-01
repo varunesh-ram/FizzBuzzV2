@@ -27,5 +27,9 @@ public class FizzBuzzTest {
 	public void PassingThreeToGetOutputFizz() {
 		Assert.assertEquals("Fizz", fizzBuzz.generate(3));
 	}
-
+	
+	@Test
+	public void PassingSixToGetOutputFizz() {
+		Assert.assertEquals("Fizz", fizzBuzz.generate(6));
+	}
 }
