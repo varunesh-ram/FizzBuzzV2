@@ -4,6 +4,8 @@ public class FizzBuzz {
 
 	public String generate(int inputValue) {
 		String outputValue = String.valueOf(inputValue);
+		if (inputValue < 0)
+			throw new NegativeInput();
 		if (inputValue == 0)
 			outputValue = "0";
 		else if (inputValue % 15 == 0)
@@ -14,5 +16,5 @@ public class FizzBuzz {
 			outputValue = "Buzz";
 		return outputValue;
 	}
-
 }
+

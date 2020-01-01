@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+
 public class FizzBuzzTest {
 	
 	public FizzBuzz fizzBuzz;
@@ -71,6 +72,10 @@ public class FizzBuzzTest {
 	@Test
 	public void PassingZeroToGetOutputZero() {
 		Assert.assertEquals("0", fizzBuzz.generate(0));
+	}	
+
+	@Test (expected = NegativeInput.class)
+	public void PassingMinusOneToNegativeInputException() {
+		fizzBuzz.generate(-1);
 	}
-	
 }
