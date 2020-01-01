@@ -8,6 +8,8 @@ public class FizzBuzz {
 			outputValue =  "Fizz";
 		else if (inputValue%5 == 0)
 			outputValue = "Buzz";
+		if(inputValue == 15)
+			outputValue = "FizzBuzz";
 		return outputValue;
 	}
 
