@@ -7,4 +7,6 @@ target/*
 
 # Eclipse file
 .project
+.classpath
 .settings/*
+/target/
