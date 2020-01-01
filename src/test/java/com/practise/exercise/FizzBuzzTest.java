@@ -69,7 +69,7 @@ public class FizzBuzzTest {
 	}
 	
 	@Test
-	public void PassingZeroToGetOutputBuzz() {
+	public void PassingZeroToGetOutputZero() {
 		Assert.assertEquals("0", fizzBuzz.generate(0));
 	}
 }
