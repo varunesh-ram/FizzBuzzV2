@@ -15,12 +15,17 @@ public class FizzBuzzTest {
 	
 	@Test
 	public void PassingOneToGetOutputOne() {
-        Assert.assertEquals(1, fizzBuzz.generate(1));
+        Assert.assertEquals("1", fizzBuzz.generate(1));
     }
 	
 	@Test
 	public void PassingTwoToGetOutputTwo() {
-		Assert.assertEquals(2, fizzBuzz.generate(2));
+		Assert.assertEquals("2", fizzBuzz.generate(2));
+	}
+	
+	@Test
+	public void PassingThreeToGetOutputFizz() {
+		Assert.assertEquals("Fizz", fizzBuzz.generate(3));
 	}
 
 }

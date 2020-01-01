@@ -2,8 +2,11 @@ package com.practise.exercise;
 
 public class FizzBuzz {
 
-	public int generate(int inputValue) {
-		return inputValue;
+	public String generate(int inputValue) {
+		String outputValue = String.valueOf(inputValue);
+		if(inputValue ==3)
+			outputValue=  "Fizz";
+		return outputValue;
 	}
 
 }
