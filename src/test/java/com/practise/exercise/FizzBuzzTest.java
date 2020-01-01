@@ -37,4 +37,9 @@ public class FizzBuzzTest {
 	public void PassingFiveToGetOutputBuzz() {
 		Assert.assertEquals("Buzz", fizzBuzz.generate(5));
 	}
+	
+	@Test
+	public void PassingTenToGetOutputBuzz() {
+		Assert.assertEquals("Buzz", fizzBuzz.generate(10));
+	}
 }

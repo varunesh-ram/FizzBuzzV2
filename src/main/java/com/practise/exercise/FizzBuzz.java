@@ -6,7 +6,7 @@ public class FizzBuzz {
 		String outputValue = String.valueOf(inputValue);
 		if(inputValue%3 == 0)
 			outputValue =  "Fizz";
-		else if (inputValue == 5)
+		else if (inputValue%5 == 0)
 			outputValue = "Buzz";
 		return outputValue;
 	}
